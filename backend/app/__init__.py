@@ -1,0 +1,1 @@
+# ForexPulse AI Backend Application

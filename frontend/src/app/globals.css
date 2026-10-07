@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080b11;
+  --foreground: #f1f5f9;
+  --card-bg: #0e1320;
+  --panel-bg: #121829;
+  --border-subtle: #1e293b;
+  --accent-bullish: #10b981;
+  --accent-bearish: #f43f5e;
+  --accent-cyan: #06b6d4;
+  --accent-amber: #f59e0b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* FinTech Accents & Micro-Animations */
+.glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.22);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.22);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+.border-subtle {
+  border-color: rgba(30, 41, 59, 0.85);
+}
+
+/* Trading Terminal Monospace Fonts */
+.font-mono-numeric {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 2.5s infinite ease-in-out;
+}
